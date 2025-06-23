@@ -1,0 +1,17 @@
+<suite name="Suite" parallel="tests">
+ <parameter name="url" value="http://localhost/login.do"/>#Global area
+  <test thread-count="5" name="TestA">
+  <parameter name="un" value="admin"/>#Local area/ test block
+  <parameter name="pwd" value="manager"/>
+    <classes>
+      <class name="com.actitime.testscript.DDT"/>
+    </classes>
+  </test> 
+   <test thread-count="5" name="TestB">
+  <parameter name="un" value="manager"/>
+  <parameter name="pwd" value="admin"/>
+    <classes>
+      <class name="com.actitime.testscript.DDT"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <test thread-count="5" parallel="tests" name="TestB(failed)">
+    <parameter name="un" value="manager"/>
+    <parameter name="pwd" value="admin"/>
+    <classes>
+      <class name="com.actitime.testscript.DDT">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.actitime.testscript.DDT -->
+    </classes>
+  </test> <!-- TestB(failed) -->
+</suite> <!-- Failed suite [Suite] -->

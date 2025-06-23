@@ -1,0 +1,8 @@
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.actitime.testscript.ProjectModule"/>#1 hour
+      <class name="com.actitime.testscript.CustomerModule"/>#1 hour
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
